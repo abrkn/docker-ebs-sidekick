@@ -38,7 +38,7 @@ function cleanup() {
     exit
 }
 
-trap cleanup EXIT
+trap cleanup INT TERM
 
-sleep infinity
+while [ 1 ]; do sleep 1; done
 
